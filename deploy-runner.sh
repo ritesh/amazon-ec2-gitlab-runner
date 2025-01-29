@@ -23,7 +23,6 @@ callCloudFormation() {
     --capabilities CAPABILITY_NAMED_IAM \
     --profile ${profile} \
     --region ${region} \
-    --disable-rollback \
     --parameters \
     ParameterKey=VpcID,ParameterValue=${VpcID} \
     ParameterKey=SubnetIds,ParameterValue=\"${SubnetIds}\" \
